@@ -27,6 +27,7 @@ addToDo.addEventListener('click',()=>{
     for(let i = 0; i < completed.length;i++){
       completed[i].addEventListener('click', ()=>{
         console.log("checkbox clicked")
+        listItem.remove()
       })
     }
 })
