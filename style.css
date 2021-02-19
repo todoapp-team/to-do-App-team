@@ -1,9 +1,75 @@
 /*basic dummy styles*/
 
 body{
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  background-color:#5070EF;
 }
+/* main */
 main{
-
-  margin: 10px auto;
+  text-align: center;
+  /* margin: 10px auto; */
+  height: 638px;
+  width: 1000;
+  margin-left: 150px;
+  margin-right: 150px;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  opacity: 0.89;
 }
+/* heading */
+.heading{
+  padding: 10px;
+  height: 100px;
+}
+/* add button */
+#add-to-do{
+  background-color: #5070EF;
+  
+  padding: 7px;
+  border: none;
+  text-align: center;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#add-to-do:hover{
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  
+   color: #0918ec;
+}
+#to-do{
+  border: 1px solid #555;
+  padding: 6px;
+  min-width: 330px;
+}
+#to-do:focus, #add-to-do:focus{
+  outline: 0;
+
+}
+
+.to-do-ls{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+}
+.to-do-ls li{
+  flex: 1;
+}
+
+#to-do-items{
+  min-width: 30%;
+  list-style-type: none;
+}
+#closeItem{
+  margin: 0.5rem;
+  background: #F6F9FF;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.done-task{
+  margin-left: 25px;
+  cursor: pointer;
+}
+
