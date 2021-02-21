@@ -8,12 +8,13 @@ let doneTask = document.getElementById("to-do-li")
 
 //add eventListen to the add button
 addToDo.addEventListener('click',()=>{
-  
-  //create li
+  if(toDo.value !=""){
+    //create li
   let listItem = document.createElement('li')
   listItem.id = "closeItem"
   listItem.innerText = toDo.value
   toDo.value = ""
+  listItem.title = "Double click to remove completed tasks"
   toDoItems.appendChild(listItem)
   
   let items = document.querySelectorAll("#closeItem")
@@ -31,4 +32,9 @@ addToDo.addEventListener('click',()=>{
       }
     })
   }
+  }
+  else{
+    alert("Please first type in your to do")
+  }
+
 })
